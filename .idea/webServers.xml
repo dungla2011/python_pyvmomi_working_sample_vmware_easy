@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a246d24a-c8d0-40db-8374-20ea00e889a2" name="glx">
+        <fileTransfer rootFolder="/var/glx/python/vmware_lad" accessType="SFTP" host="12.0.0.1" port="60000" sshConfigId="177411d7-d97a-4ee5-a1b4-0a556bde8938" sshConfig="root@12.0.0.1:60000 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

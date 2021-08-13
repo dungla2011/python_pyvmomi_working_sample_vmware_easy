@@ -1,0 +1,3 @@
+[console_scripts]
+vapi-server = vmware.vapi.server.vapid:main
+
