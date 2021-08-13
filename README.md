@@ -9,7 +9,7 @@
 - This sample can run on both window, linux by command line
 + Library in: venv/Lib/site-packages/
 
-Tested on Pythone 3.x, VCenter 7.0 with some Esxi 6.7
+Tested on Pythone 3.x, VCenter 7.0, Esxi 6.7
 
 **+ Command:**
 
