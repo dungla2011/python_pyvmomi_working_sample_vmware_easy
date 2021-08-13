@@ -15,6 +15,9 @@ Tested on Pythone 3.x, VCenter 7.0, Esxi 6.7
 
 python <filename.py>
 
+**Config: **
+Authenticated file: vc_info.ini in parent folder (../) or enter authenticated info in code (username of vcenter, pw...)
+
 ![Alt Text](https://galaxycloud.vn//tool/media/static.lib?sid=0&debug9868048=1&type=ms&id=jv676754&media=image)
 ![Alt Text](https://galaxycloud.vn//tool/media/static.lib?sid=0&debug9868048=1&type=ms&id=kg130922&media=image)
 
