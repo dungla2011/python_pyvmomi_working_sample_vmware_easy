@@ -6,7 +6,7 @@ This sample code demonstrates some task with VCENTER by  pyvmomi sdk python
 + Execute program in vm
 + Get esxi performance, esxi cpu usage, esxi memory usage, esxi disk usage, esxi network usage, 
 
-- This sample can run on both window, linux by command line
+- Samples can run on both window, linux by command line
 + Library in: venv/Lib/site-packages/
 
 Tested on Pythone 3.x, VCenter 7.0, Esxi 6.7
