@@ -11,4 +11,5 @@ Tested on Pythone 3.x, VCenter 7.0 with some Esxi 6.7
 
 python <filename.py>
 
+![Alt Text](https://galaxycloud.vn//tool/media/static.lib?sid=0&debug9868048=1&type=ms&id=kg130922&media=image)
 
