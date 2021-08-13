@@ -1,4 +1,6 @@
 - This sample code demonstrates some task with VCENTER by  pyvmomi sdk python
++ List all vm
++ List detail one vm
 + Limit IOPS vm
 + Limit CPU vm
 + Execute program in vm
