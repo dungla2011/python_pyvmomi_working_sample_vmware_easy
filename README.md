@@ -1,0 +1,1 @@
+# python_pyvmomi_working_sample_vmware_easy
