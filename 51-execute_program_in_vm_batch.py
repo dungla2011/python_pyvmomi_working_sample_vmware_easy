@@ -50,8 +50,10 @@ def main():
     try:
         content = si.RetrieveContent()
 
-        for i in range(120, 121):
-            vm_name = "win2012-test1_2021-08-12-" + str(i-100)
+        for i in range(3, 26):
+            vm_name = "win2012-mrtong_2021-08-16-" + str(i)
+
+            ipset = "103.163.217." + str(140 + i)
 
             print(vm_name)
             #
@@ -70,16 +72,21 @@ def main():
                     "is running")
 
             creds = vim.vm.guest.NamePasswordAuthentication(
-                username="administrator", password="123456abc"
+                username="administrator", password="!kL0121666"
             )
 
             try:
                 profile_manager = content.guestOperationsManager.processManager
 
-                path_to_program = "C:/windows/system32/netsh.exe"
-                program_arguments = "interface ipv4 set address name=\"Ethernet0\" static 10.0.0." + str(i) + " 255.255.254.0 10.0.0.1"
+                ### Set IP:
+                # path_to_program = "C:/windows/system32/netsh.exe"
+                # program_arguments = "interface ipv4 set address name=\"Ethernet0\" static " + ipset + " 255.255.254.0 103.163.216.1"
 
-                print(" program_arguments = " + program_arguments)
+                ### Change pw:
+                path_to_program = "C:/windows/system32/net.exe"
+                program_arguments = "user administrator 000zzz@098"
+
+                # print(" program_arguments = " + program_arguments)
 
                 program_spec = vim.vm.guest.ProcessManager.ProgramSpec(programPath=path_to_program,
                                                                        arguments=program_arguments)
@@ -111,13 +118,17 @@ def main():
                 # input("...")
             except IOError as ex:
                 print(ex)
-
+            # continue if error,
+            except vmodl.MethodFault as error:
+                print("Caught vmodl fault : " + error.msg)
+                # not return
+                # return -1
 
 
 
     except vmodl.MethodFault as error:
         print("Caught vmodl fault : " + error.msg)
-        return -1
+        # return -1
 
     return 0
 
